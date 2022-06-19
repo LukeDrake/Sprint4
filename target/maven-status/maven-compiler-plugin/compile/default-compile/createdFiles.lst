@@ -1,0 +1,16 @@
+models\requests\CreateCourierRequestBody.class
+models\responses\SuccessOrderResponse.class
+models\responses\LoginResponse.class
+models\requests\CreateOrderRequestBody.class
+util\RestAssuredClient.class
+models\requests\LoginCourierRequestBody.class
+models\responses\OrderResponse.class
+config\ApiEndpoints.class
+models\errors\ErrorLoginCourier.class
+models\requests\DeleteCourierRequestBody.class
+models\responses\OrderListResponse.class
+config\ConnectionSettings.class
+models\errors\ErrorCourier.class
+models\responses\SuccessResponse.class
+steps\CourierSteps.class
+steps\OrderSteps.class
