@@ -10,7 +10,13 @@ public class AccountInvalidTests {
     @Parameterized.Parameters(name = "Имя: {0}")
     public static Iterable<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {"ВасяПупкин"}, {" ВасяПупкин"}, {"ВасяПупкин "}, {"Ва"}, {"Вася ПупкинПупкинПупкинПупкин"},
+                {"ВасяПупкин"},
+                {" ВасяПупкин"},
+                {"ВасяПупкин "},
+                {" ВасяПупкин "},
+                {"Ва"},
+                {"Вася ПупкинПупкинПупкинПупкин"},
+                {null}
         });
     }
 

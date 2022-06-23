@@ -6,12 +6,14 @@ public class Account {
     }
 
     public boolean checkNameToEmboss() {
-        int strSize = this.name.length();
-        char firstChar = this.name.charAt(0);
-        char lastChar = this.name.charAt(this.name.length() - 1);
+        if (name == null) return false;
+
+        int strSize = name.length();
+        char firstChar = name.charAt(0);
+        char lastChar = name.charAt(this.name.length() - 1);
 
         if (strSize < 3 || strSize > 19) return false;
         if (firstChar == ' ' || lastChar == ' ') return false;
-        return this.name.chars().filter(c -> c == (int) ' ').count() == 1;
+        return name.chars().filter(c -> c == (int) ' ').count() == 1;
     }
 }
